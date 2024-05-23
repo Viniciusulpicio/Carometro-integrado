@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carômetro</title>
+    <link rel="icon" href="../../public/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body><div class="formBody">
+    <div class="formBody_forms">
+        <h1>Cadastre uma turma</h1>
+        <form action="?pagina=cadastroTurmas&metodo=insert">
+            <label for="codigo">Codigo: </label>
+            <input required type="text" name="codigo" placeholder="Insira o código da sua turma (ex: IDEV2)">
+            <label for="descricao">Descricao: </label>
+            <input required type="text" name="descricao" placeholder="Insira a descrição da sua turma (ex: Desenvolvimento de Sistemas)">
+            <label for="inicio">Início: </label>
+            <input required type="date" name="inicio">
+            <label for="fim">Fim: </label>
+            <input required type="date" name="fim">
+            <label for="fotos">Fotos: </label>
+            <input required type="text" name="fotos" placeholder="Insira a foto da sua turma">
+
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carômetro</title>
+    <link rel="icon" href="../../public/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="alunoPage">
+        <div class='alunoPage_header'>
+            <a href="home.html"><img src="https://alu-cek.com.br/web/wp-content/uploads/2016/09/logo-senai.fw_.png"
+                    alt="" class='senaiLogo' /></a>
+            <a href="login.html" class="logout_button">Sair</a>
+        </div>
+        <div class="alunoPage_title">
+            <h1>Aluno</h1>
+        </div>
+        <div class="alunoPage_content">
+            <div class="alunoPage_content_img">
+                <img
+                    src="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg" />
+            </div>
+            <div>
+                <div class="alunoPage_content_information">
+                    <form action="" id="formAluno">
+                        <div>
+                            <h2>Email</h2>
+                            <input class="inputAluno" type="text" name="email" value="{{aluno.email}}">
+                        </div>
+                        <div>
+                            <h2>CPF</h2>
+                            <input class="inputAluno" type="text" name="cpf" value="{{aluno.cpf}}" disabled>
+                        </div>
+                        <div>
+                            <h2>Celular</h2>
+                            <input class="inputAluno" type="text" name="celular" value="{{aluno.celular}}">
+                        </div>
+                        <div>
+                            <h2>Cep</h2>
+                            <input class="inputAluno" type="text" name="cep" value="{{aluno.cep}}" id="cep"
+                                onblur="pesquisacep(this.value);">
+                        </div>
+                        <div>
+                            <h2>Logradouro</h2>
+                            <input class="inputAluno" type="text" name="logradouro" id="rua"
+                                value="{{aluno.logradouro}}">
+                        </div>
+                        <div>
+                            <h2>Bairro</h2>
+                            <input class="inputAluno" type="text" name="bairro" id="bairro" value="{{aluno.bairro}}">
+                        </div>
+                        <div>
+                            <h2>Cidade</h2>
+                            <input class="inputAluno" type="text" name="cidade" id="cidade" value="{{aluno.cidade}}">
+                        </div>
+                        <div>
+                            <h2>Estado</h2>
+                            <input class="inputAluno" type="text" name="estado" id="uf" value="{{aluno.estado}}">
+                        </div>
+                        <div class="buttonsAluno">
+                            <button type="submit" id="buttonSubmitAluno" disabled>Alterar</button>
+                            <button type="reset" id="buttonResetAluno" disabled>Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="alunoPage_formOcorrencia">
+                    <h2>Adicionar ocorrência</h2>
+                    <form action="">
+                        <div>
+                            <input type="text" name="cpfAluno" value="{{aluno.cpf}}" class="inputCpfAluno">
+                            <select name="tema" required>
+                                <option value="-">Selecione o tema principal da ocorrência</option>
+                                <option value="Indisciplina em sala de aula">Indisciplina em sala de aula</option>
+                                <option value="Comportamento desrespeitoso">Comportamento desrespeitoso</option>
+                                <option value="Falta de material escolar">Falta de material escolar</option>
+                                <option value="Atraso">Atraso</option>
+                                <option value="Uniforme inadequado">Uniforme inadequado</option>
+                                <option value="Uso inadequado de dispositivos eletrônicos">Uso inadequado de
+                                    dispositivos
+                                    eletrônicos</option>
+                                <option value="Violação de políticas de segrança">Violação de políticas de segrança
+                                </option>
+                                <option value="Não realizou a atividade">Não realizou a atividade</option>
+                            </select>
+                            <input type="date" name="data" placeholder="Data do acontecimento" required>
+                        </div>
+                        <textarea name="descricao" placeholder='Descrição' required></textarea>
+                        <button type='submit'>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="alunoPage_ocorrencias">
+            <h2>Todas as ocorrências</h2>
+            <div class="ocorrencias">
+                <div class="alunoPage_ocorrencia">
+                    <h3>Indisciplina em sala de aula - 14/05/2023</h3>
+                    <p>Dormiu durante a explicação</p>
+                </div>
+                <div class="alunoPage_ocorrencia">
+                    <h3>Indisciplina em sala de aula - 14/05/2023</h3>
+                    <p>Dormiu durante a explicação</p>
+                </div>
+                <div class="alunoPage_ocorrencia">
+                    <h3>Indisciplina em sala de aula - 14/05/2023</h3>
+                    <p>Dormiu durante a explicação</p>
+                </div>
+                <div class="alunoPage_ocorrencia">
+                    <h3>Indisciplina em sala de aula - 14/05/2023</h3>
+                    <p>Dormiu durante a explicação</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

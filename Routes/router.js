@@ -9,10 +9,9 @@ const turmaController = require("../Controllers/turmas")
 //                                       R O T A S usuario
 router.get('/usuario', usuarioController.getAll)
 router.get('/usuario/:id', usuarioController.getById)
-
-// cria um usuario passando informações no body 
 router.post('/usuario', usuarioController.createUsuario)
 router.put('/usuario/:cpf', usuarioController.updateUsuario)
+router.delete('/usuario/:id', usuarioController.deleteUsuario)
 
 
 //                                       R O T A S turmas

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carômetro</title>
+    <link rel="icon" href="../../public/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body><div class="formBody">
+    <div class="formBody_forms cadastro">
+        <h1>Faça seu cadastro aqui!</h1>
+
+        <form action="login.html">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Insira seu nome aqui">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Insira seu email aqui">
+
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" placeholder="Insira seu CPF aqui">
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" placeholder="Insira sua senha aqui">
+
+            <label for="celular">Celular: </label>
+            <input type="text" name="celular" placeholder="Insira seu celular aqui">
+
+            <label for="cep">CEP: </label>
+            <input type="text" name="cep" placeholder="Insira seu Cep aqui" id="cep" onblur="pesquisacep(this.value);">
+
+            <label for="logradouro">Logradouro: </label>
+            <input type="text" name="logradouro" id="rua" placeholder="Insira seu logradouro aqui">
+
+            <label for="bairro">Bairro: </label>
+            <input type="text" name="bairro" id="bairro" placeholder="Insira seu bairro aqui">
+
+            <label for="cidade">Cidade: </label>
+            <input type="text" name="cidade" id="cidade" placeholder="Insira sua cidade aqui">
+
+            <label for="estado">Estado: </label>
+            <input type="text" name="estado" id="uf" placeholder="Insira seu estado aqui">
+
+            <label for="Tipos_Usuarios_idTipos_Usuarios">Tipo de usuário: </label>
+            <div>
+                <input class="inputBola" type="radio" name="Tipos_Usuarios_idTipos_Usuarios" value=1>
+                <label for="aluno">Aluno</label>
+            </div>
+            <div>
+                <input class="inputBola" type="radio" name="Tipos_Usuarios_idTipos_Usuarios" value=2>
+                <label for="aluno">Funcionário</label>
+            </div>
+
+            <label for="foto">Foto: </label>
+            <input type="text" name="foto" placeholder="Insira sua foto aqui">
+
+            <label for="turma" class="inputTurma">Turma: </label>
+            <select type="text" name="turma" class="inputTurma">
+                <option value="-">Escolha sua turma</option>
+                <option value="IDEV1">IDEV1</option>
+                <option value="IDEV2">IDEV2</option>
+                <option value="IDEV3">IDEV3</option>
+                <option value="IELE1">IELE1</option>
+                <option value="IELE2">IELE2</option>
+                <option value="IELE3">IELE3</option>
+                <option value="IMEC1">IMEC1</option>
+                <option value="IMEC2">IMEC2</option>
+                <option value="IMEC3">IMEC3</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit" class="botaoCadastro">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carômetro</title>
+    <link rel="icon" href="../../public/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body><div class="homePage">
+    <div class='homePage_header'>
+        <a href="home.html"><img src="https://alu-cek.com.br/web/wp-content/uploads/2016/09/logo-senai.fw_.png"
+            alt="" class='senaiLogo' /></a>
+        <a href="login.html" class="logout_button">Sair</a>
+    </div>
+    <div class="homePage_title">
+        <h1>Selecione a turma desejada</h1>
+    </div>
+
+    <div class="homePage_turmas" >
+        <div class="turma" onclick="redirectTurma('{{turma.codigo}}')">
+            <div class="turma_top">
+                <h1>IDEV1</h1>
+                <p>Desenvolvimento de sistemas</p>
+            </div>
+            <a class='turma_arrow'>&gt;</a>
+        </div>
+        <div class="turma" onclick="redirectTurma('{{turma.codigo}}')">
+            <div class="turma_top">
+                <h1>IDEV2</h1>
+                <p>Desenvolvimento de sistemas</p>
+            </div>
+            <a class='turma_arrow'>&gt;</a>
+        </div>
+        <div class="turma" onclick="redirectTurma('{{turma.codigo}}')">
+            <div class="turma_top">
+                <h1>IDEV3</h1>
+                <p>Desenvolvimento de sistemas</p>
+            </div>
+            <a class='turma_arrow'>&gt;</a>
+        </div>
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+
+</html>
